@@ -1,31 +1,37 @@
 body{
-    background-color: #1D3557;
+    background-color: #475C7A;
 }
 h1{
-    color: #E63946;
+    color: #FCB86D;
+    background-color: #685D79;
 }
-ul{
+ul:nth-of-type(odd){
     list-style-type: none;
-    color: #A8DADC;
+    background-color: #AB6C82;
+}
+ul:nth-of-type(even){
+    list-style-type: none;
+    background-color: #685D79;
 }
 ul li::before{
     content: "\2022";
-    color: #E63946;
+    color: #FCB86D;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -2em;
 }
 ol{
-    color: #F1FAEE;
+    background-color: #D8737F;
 }
-.non_sporting{
-    background-color: #45789D;
+ol,ul>li{
+    color: #FFFFFF;
 }
-#corgi{
-    color: #1D3557;
-    background-color: #F1FAEE;
+ol>li:nth-child(4n+1){
+    background-color: #AB6C82;
+    font-weight: bold;
 }
-ol>li{
+ol>li:nth-child(4n+3){
+    background-color: #685D79;
     font-weight: bold;
 }
